@@ -22,6 +22,7 @@
     "angular": true,
     "beforeEach": true,
     "console": true,
+    "consoleLog": true,
     "describe": true,
     "document": true,
     "done": true,

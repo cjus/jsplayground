@@ -12,8 +12,8 @@ angular.module('app', ['ngRoute', 'ui.bootstrap'])
 
     $routeProvider
       .when('/', {
-        templateUrl: 'views/login_view.html',
-        controller: 'LoginController'
+        templateUrl: 'views/console_view.html',
+        controller: 'ConsoleController'
       })
       .otherwise({
         redirectTo: '/'

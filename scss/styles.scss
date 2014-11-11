@@ -1,38 +1,28 @@
-$pageColor: #aabbcc;
-
-body {
-  background: $pageColor;
+html {
+  background-color: #3c3f41;
 }
 
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+body {
+  background: transparent;
+}
 
-  .form-signin-heading,
-  .form-signin .checkbox {
-    margin-bottom: 10px;
-  }
+.container {
+  margin-top: 20px;
+}
 
-  .form-control {
-    position: relative;
-    height: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-    font-size: 16px;
-  }
+.test-console {
+  font-family: Andale Mono, monospace;
+  line-height: 1em;
+  font-size: 1em;
+  background-color: black;
+  color: green;
+  padding: 8px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
 
-  input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
+.grey-text {
+  color: #747474;
 }

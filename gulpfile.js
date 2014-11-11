@@ -1,8 +1,6 @@
 // Include gulp
 var gulp = require('gulp');
 
-var outputDir = './';
-
 // Include Our Plugins
 var jshint = require('gulp-jshint')
   , templateCache = require('gulp-angular-templatecache')
@@ -101,14 +99,13 @@ gulp.task('watch', function() {
   'use strict';
   gulp.watch('./scss/*.scss', ['sass', 'reload']);
   gulp.watch('./index.html', ['reload']);
-  gulp.watch('./views/**/*.html', ['reload']);
-  gulp.watch('./js/**/*.js', ['reload']);
+  gulp.watch('./views/*.html', ['reload']);
+  gulp.watch('./js/*.js', ['reload']);
 });
 
 gulp.task('connect', function() {
   'use strict';
   return connect.server({
-    root: [outputDir],
     port: 8080, // optional
     livereload: true
   });
