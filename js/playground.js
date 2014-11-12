@@ -1,4 +1,4 @@
 window.playground = function() {
   'use strict';
-  consoleLog('Welcome to the playgound');
+  consoleLog('Welcome to the playground');
 };
