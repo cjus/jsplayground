@@ -17,14 +17,19 @@ angular.module('app')
         date.getMilliseconds();
     };
 
-    $window.consoleLog = function(message, objectValue) {
+    /**
+     * mock console log
+     * @param message - text message
+     * @param objectValue - value / object
+     */
+    $window.mcl = function(message, objectValue) {
       var strDate = $scope.getDate();
       try {
         if (typeof objectValue !== "undefined") {
           if (typeof objectValue === "object") {
-            message = message + "(object) " + JSON.stringify(objectValue);
+            message = message + ': ' + JSON.stringify(objectValue);
           } else {
-            message = message + "(" + typeof message + ") " + objectValue;
+            message = message + ': ' + objectValue;
           }
         }
         $scope.console.push(strDate + ": " + message);
@@ -33,6 +38,6 @@ angular.module('app')
       }
     };
 
-    $window.consoleLog("JavaScript Playground v" + VERSION);
+    $window.mcl("JavaScript Playground v" + VERSION);
     $window.playground();
   }]);

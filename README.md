@@ -10,10 +10,11 @@ To add your own JS code just edit the `js/playground.js` file.
 
     window.playground = function() {
       'use strict';
-      consoleLog('Welcome to the playgound');
+      mcl('Welcome to the playgound');
+      // {{ your code here! }}
     };
 
-Output to the mock console using the global `consoleLog` function.
+Output to the mock console using the global `mcl` function.
 
 Side note: this project is based on the [Modern Website Seed (MWS)](https://github.com/cjus/modern-web-seed)
 
@@ -21,7 +22,7 @@ You can start the app using gulp.
 
     $ gulp
 
-    [09:21:21] Using gulpfile ~/dev/cjus/jsplayground/gulpfile.js
+    [09:21:21] Using gulpfile ~/jsplayground/gulpfile.js
     [09:21:21] Starting 'watch'...
     [09:21:21] Finished 'watch' after 8.92 ms
     [09:21:21] Starting 'connect'...
