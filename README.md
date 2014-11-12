@@ -1,7 +1,37 @@
 # JavaScript PlayGround (JSPG)
 A simulated console for playing with JavaScript
 
+This project is a some what silly way of playing around with JavaScript.  The basic premise is that this is a container project where you can write small Javascript snipets and see the results using the underlying liveedit feature.  The results of your Javascript snipet is shown in a mock console hosted in a web page.
+
+
+![JSPlayground](JavaScript_Playground.png)
+
+To add your own JS code just edit the `js/playground.js` file.
+
+    window.playground = function() {
+      'use strict';
+      consoleLog('Welcome to the playgound');
+    };
+
+Output to the mock console using the global `consoleLog` function.
+
 Side note: this project is based on the [Modern Website Seed (MWS)](https://github.com/cjus/modern-web-seed)
+
+You can start the app using gulp.
+
+    $ gulp
+
+    [09:21:21] Using gulpfile ~/dev/cjus/jsplayground/gulpfile.js
+    [09:21:21] Starting 'watch'...
+    [09:21:21] Finished 'watch' after 8.92 ms
+    [09:21:21] Starting 'connect'...
+    [09:21:21] Finished 'connect' after 7.18 ms
+    [09:21:21] Starting 'default'...
+    [09:21:21] Finished 'default' after 5.72 μs
+    [09:21:21] Server started http://localhost:8080
+    [09:21:21] LiveReload started on port 35729
+
+Then simply point your web browser to: http://localhost:8080  and continue editing your code. Saving your code will trigger a browser refresh.
 
 ## Setup
 
