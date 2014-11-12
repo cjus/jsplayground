@@ -1,7 +1,7 @@
 {
-  "name": "2fa-test",
-  "description": "2fa-test",
-  "version": "0.0.2",
+  "name": "JavaScripPlayground",
+  "description": "JavaScript Playground",
+  "version": "0.0.3",
   "private": "true",
   "scripts": {
     "test": "karma start karma.config.js"
